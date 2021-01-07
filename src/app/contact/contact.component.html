@@ -1,0 +1,35 @@
+<div class="wrapper">
+  <div class="header">
+    <h1 id="contact">CONTACT</h1>
+  </div>
+  <div class="container">
+    <div class="contract">
+      <div class="form-div">
+        <form [formGroup]="formData">
+          <mat-form-field class="form-field-controller">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="name" required [(ngModel)]="data.name" formControlName="name">
+            <mat-error>
+              Please enter the Name.
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field class="form-field-controller">
+            <mat-label>Email</mat-label>
+            <input type="email" matInput placeholder="email" required [(ngModel)]="data.email" formControlName="email">
+            <mat-error>
+              Please enter a valid email address.
+            </mat-error>
+          </mat-form-field>
+          <mat-form-field class="form-field-controller">
+            <mat-label>Your message</mat-label>
+            <textarea matInput placeholder="Your message" required [(ngModel)]="data.message" formControlName="message"></textarea>
+            <mat-error>
+              Please enter the message.
+            </mat-error>
+          </mat-form-field>
+          <button mat-raised-button [disabled]="!formData.valid" color="primary" class="submit-button" (click)="onSubmit()">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

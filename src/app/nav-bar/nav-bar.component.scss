@@ -1,0 +1,108 @@
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #1b242f;
+  border-bottom: 3px solid #04c2c9;
+  padding: 11px;
+  position: sticky;
+  top: 0;
+}
+
+.nav-container {
+  overflow: hidden;
+}
+
+.nav-container a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav-container a:hover {
+  // background-color: #ddd;
+  color: red;
+  transition: 1s;
+}
+
+// ==================================================================
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+// ==================================================================
+
+@media screen and (max-width: 600px) {
+  .hide-nav {
+    display: none;
+  }
+
+  .button-menu {
+    cursor: pointer;
+    float: right;
+    height: 100%;
+    width: 50px;
+    background-color: #1b242f;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .icon {
+    color: whitesmoke;
+    width: 100%;
+  }
+
+  .nav {
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .button-menu {
+    display: none;
+  }
+}

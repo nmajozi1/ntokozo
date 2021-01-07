@@ -1,0 +1,63 @@
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: #252934;
+}
+
+.header {
+  text-align: center;
+  height: 200;
+  color: #fff;
+  padding-top: 70px;
+}
+
+.wrapper h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.wrapper h5 {
+  line-height: 0.5;
+  padding-top: 30px;
+  color: #444649;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.align {
+  text-align: center;
+}
+
+.form-div {
+  width: 70%;
+  height: 400px;
+  background-color: transparent;
+}
+
+.contract {
+  padding-top: 50px;
+  padding-left: 320px;
+}
+
+.form-field-controller {
+  width: 100%;
+  color: whitesmoke;
+}
+
+.submit-button {
+  width: 30%;
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  .contract {
+    padding-left: 20px;
+  }
+
+  .form-field-controller {
+    width: 130%;
+    color: whitesmoke;
+  }
+
+  .submit-button {
+    float: left;
+  }
+}

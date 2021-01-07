@@ -1,0 +1,22 @@
+<div class="wrapper">
+  <div id="portfolio" class="header">
+    <h1>PROJECTS</h1>
+  </div>
+  <div class="nav">
+    <div class="container nav-container">
+      <a (click)="getProjectsByCompany()">All</a>
+      <a (click)="getProjectsByCompany('wizzit')">Wizzit International</a>
+      <a (click)="getProjectsByCompany('apex')">Apex</a>
+      <a (click)="getProjectsByCompany('sovtech')">Sovtech</a>
+      <a (click)="getProjectsByCompany('ntt')">NTT/Dimension Data</a>
+      <a (click)="getProjectsByCompany('personal')">Personal</a>
+    </div>
+  </div>
+  <div class="container project-images">
+    <div class="row">
+      <div *ngFor="let project of projects" class="col-sm-4">
+        <div [class]="project.class"></div>
+      </div>
+    </div>
+  </div>
+</div>

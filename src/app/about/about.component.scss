@@ -1,0 +1,120 @@
+.wrapper {
+  height: 70%;
+  width: 100%;
+  background-color: whitesmoke;
+  padding-bottom: 50px;
+}
+
+.header {
+  text-align: center;
+  height: 200;
+  color: #444649;
+  padding-top: 70px;
+}
+
+.wrapper h1 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.wrapper h5 {
+  line-height: 0.5;
+  padding-top: 30px;
+  color: #444649;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.column-spacing {
+  padding-top: 70px;
+}
+
+.column {
+  text-align: center;
+}
+
+.image-agile {
+  background-color: black;
+  background-image: url('../../assets/images/agile.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+}
+
+.image-responsive {
+  background-color: black;
+  background-image: url('../../assets/images/responsive.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+}
+
+.image-full-stack {
+  background-color: black;
+  background-image: url('../../assets/images/Full_stack.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+}
+
+.image-dynamic {
+  background-color: black;
+  background-image: url('../../assets/images/dynamic3.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+}
+
+.about-me {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.about-me-image {
+  padding-top: 70px;
+}
+
+.about-me-image {
+  background-image: url('../../assets/images/majozi13.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 70%;
+}
+
+.about-me-progress {
+  border-left: 3px solid #04c2c9;
+  padding-top: 20px;
+}
+
+.about-me-progress-padding {
+  padding-left: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .space-between {
+    padding-top: 20px;
+  }
+
+  .column-spacing {
+    padding-top: 50px;
+  }
+
+  .about-me-progress {
+    padding-top: 70px;
+  }
+
+  .about-me-progress-padding {
+    padding-left: 0px;
+  }
+
+  .remove-solid-border {
+    border-left: 0px solid #fff;
+  }
+
+  .about-me {
+    text-align: center;
+  }
+}

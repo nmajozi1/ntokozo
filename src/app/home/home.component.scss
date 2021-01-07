@@ -1,0 +1,63 @@
+#screenFiller {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: black;
+  width: 100%;
+}
+
+.banner {
+  width: 100%;
+  height: 94vh;
+  background-color: black;
+  padding-top: 350px;
+  padding-left: 250px;
+  background-image: url('../../assets/images/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.banner p {
+  line-height: 0.1;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.banner h1 {
+  line-height: 1;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.information {
+  color: whitesmoke;
+  background-color: transparent;
+}
+
+.image {
+  opacity: 0.5;
+}
+
+.header-text {
+  font-size: 3vw;
+}
+
+.paragraph-text {
+  font-size: 1vw;
+}
+
+@media screen and (max-width: 600px) {
+  .header-text {
+    font-size: 5vw;
+  }
+
+  .paragraph-text {
+    font-size: 2vw;
+  }
+
+  .banner {
+    padding-left: 0px;
+    padding-top: 200px;
+    text-align: center;
+    height: 400px;
+  }
+
+}

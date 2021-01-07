@@ -1,0 +1,32 @@
+<div class="wrapper">
+  <div id="about" class="header">
+    <h1>ABOUT</h1>
+  </div>
+  <div class="container">
+    <div class="row column-spacing">
+
+      <div class="col-sm-3 space-between column" *ngFor="let image of imageList">
+        <div [class]="image.class"></div>
+        <h5>{{ image.header }}</h5>
+        <p>{{ image.paragraph }}</p>
+      </div>
+
+      <div class="col-sm-6 about-me">
+        <div class="about-me-image"></div>
+        <h5>Who's this guy?</h5>
+        <p>I'm a Full-Stack Developer for NTT in Cape Town, SA.
+          I have serious passion for UI effects, Design patterns, dynamic user experiences.
+          Let's make something special.</p>
+      </div>
+
+      <div class="col-sm-6 about-me-progress remove-solid-border">
+        <div *ngFor="let skill of skillList" [class]="skill.class">
+          <h5>{{ skill.header }}</h5>
+          <mat-progress-bar mode="determinate" [value]="skill.percentage"></mat-progress-bar>
+          <P style="float: right; font-size: 12px;">{{ skill.percentage }}%</P>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
